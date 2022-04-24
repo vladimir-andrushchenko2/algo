@@ -18,8 +18,6 @@ std::vector<int> ReadValues(std::istream& input, int n_values) {
         input >> output.emplace_back();
     }
 
-    // input >> std::ws;
-
     return output;
 }
 
