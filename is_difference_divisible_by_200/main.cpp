@@ -20,8 +20,8 @@ std::vector<int> ReadValues(std::istream& input, int n_values) {
     return output;
 }
 
-int CountDifferencesDivisible(const std::vector<int>& values) {
-    std::unordered_map<int, int> remainder_to_count;
+size_t CountDifferencesDivisible(const std::vector<int>& values) {
+    std::unordered_map<int, size_t> remainder_to_count;
     
     static constexpr int kDivider = 200;
     
